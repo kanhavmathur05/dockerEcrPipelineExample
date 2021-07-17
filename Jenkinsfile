@@ -28,5 +28,10 @@ pipeline {
                 
             }
         }
+        stage('TestStage') {
+            steps {
+                bat 'echo TestString'
+            }
+        }
     }
 }
